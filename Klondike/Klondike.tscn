@@ -1,0 +1,451 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Scripts/CardStackContainer.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/WasteContainer.gd" type="Script" id=2]
+[ext_resource path="res://Klondike.gd" type="Script" id=4]
+
+[sub_resource type="Gradient" id=2]
+colors = PoolColorArray( 0, 0.6, 0.6, 1, 0, 0.666667, 0.8, 1 )
+
+[sub_resource type="GradientTexture2D" id=3]
+gradient = SubResource( 2 )
+fill_from = Vector2( 0, 1 )
+fill_to = Vector2( 1, 0.654167 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = SubResource( 3 )
+region_rect = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
+[sub_resource type="StyleBoxFlat" id=5]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=6]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=7]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=8]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=9]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=10]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=11]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=12]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=13]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=14]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=15]
+resource_local_to_scene = true
+bg_color = Color( 0.545098, 0.592157, 0.678431, 1 )
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Klondike" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 4 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+
+[node name="KlondikeBoard" type="Control" parent="MarginContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 1260.0
+margin_bottom = 940.0
+mouse_filter = 2
+
+[node name="StockArea" type="HBoxContainer" parent="MarginContainer/KlondikeBoard"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -620.0
+margin_right = -282.0
+margin_bottom = 180.0
+mouse_filter = 2
+
+[node name="Talon" type="Container" parent="MarginContainer/KlondikeBoard/StockArea"]
+unique_name_in_owner = true
+margin_right = 126.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+fan_cards = false
+background = SubResource( 16 )
+
+[node name="Waste" type="Container" parent="MarginContainer/KlondikeBoard/StockArea"]
+unique_name_in_owner = true
+margin_left = 130.0
+margin_right = 340.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 2 )
+card_stack = 1
+background = SubResource( 17 )
+
+[node name="FoundationGrid" type="GridContainer" parent="MarginContainer/KlondikeBoard"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 86.0
+margin_right = 620.0
+margin_bottom = 180.0
+grow_horizontal = 0
+mouse_filter = 2
+size_flags_horizontal = 8
+custom_constants/hseparation = 10
+columns = 4
+
+[node name="Foundation-1" type="Container" parent="MarginContainer/KlondikeBoard/FoundationGrid"]
+unique_name_in_owner = true
+margin_right = 126.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 2
+fan_cards = false
+background = SubResource( 5 )
+
+[node name="Foundation-2" type="Container" parent="MarginContainer/KlondikeBoard/FoundationGrid"]
+unique_name_in_owner = true
+margin_left = 136.0
+margin_right = 262.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 3
+fan_cards = false
+background = SubResource( 6 )
+
+[node name="Foundation-3" type="Container" parent="MarginContainer/KlondikeBoard/FoundationGrid"]
+unique_name_in_owner = true
+margin_left = 272.0
+margin_right = 398.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 4
+fan_cards = false
+background = SubResource( 7 )
+
+[node name="Foundation-4" type="Container" parent="MarginContainer/KlondikeBoard/FoundationGrid"]
+unique_name_in_owner = true
+margin_left = 408.0
+margin_right = 534.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 5
+fan_cards = false
+background = SubResource( 8 )
+
+[node name="Tableau" type="GridContainer" parent="MarginContainer/KlondikeBoard"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -322.0
+margin_top = 190.0
+margin_right = 620.0
+margin_bottom = 370.0
+grow_horizontal = 0
+mouse_filter = 2
+custom_constants/hseparation = 10
+columns = 7
+
+[node name="CardStack-1" type="Container" parent="MarginContainer/KlondikeBoard/Tableau"]
+unique_name_in_owner = true
+margin_right = 126.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 6
+background = SubResource( 9 )
+
+[node name="CardStack-2" type="Container" parent="MarginContainer/KlondikeBoard/Tableau"]
+unique_name_in_owner = true
+margin_left = 136.0
+margin_right = 262.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 7
+background = SubResource( 10 )
+
+[node name="CardStack-3" type="Container" parent="MarginContainer/KlondikeBoard/Tableau"]
+unique_name_in_owner = true
+margin_left = 272.0
+margin_right = 398.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 8
+background = SubResource( 11 )
+
+[node name="CardStack-4" type="Container" parent="MarginContainer/KlondikeBoard/Tableau"]
+unique_name_in_owner = true
+margin_left = 408.0
+margin_right = 534.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 9
+background = SubResource( 12 )
+
+[node name="CardStack-5" type="Container" parent="MarginContainer/KlondikeBoard/Tableau"]
+unique_name_in_owner = true
+margin_left = 544.0
+margin_right = 670.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 10
+background = SubResource( 13 )
+
+[node name="CardStack-6" type="Container" parent="MarginContainer/KlondikeBoard/Tableau"]
+unique_name_in_owner = true
+margin_left = 680.0
+margin_right = 806.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 11
+background = SubResource( 14 )
+
+[node name="CardStack-7" type="Container" parent="MarginContainer/KlondikeBoard/Tableau"]
+unique_name_in_owner = true
+margin_left = 816.0
+margin_right = 942.0
+margin_bottom = 180.0
+mouse_filter = 1
+script = ExtResource( 1 )
+card_stack = 12
+background = SubResource( 15 )
+
+[node name="LblAbout" type="Label" parent="MarginContainer/KlondikeBoard"]
+unique_name_in_owner = true
+visible = false
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = 99.0
+margin_right = 871.0
+margin_bottom = 397.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Welcome to Klondike! Well, that's what I was told to tell you, anyway! I always called this game 'Solitaire'.
+
+Drag or double click on some cards to get started.
+
+This game was made with Godot. For more information about Godot's licensing, please visit <https://godotengine.org/license>."
+autowrap = true
+
+[node name="LblCredits" type="Label" parent="MarginContainer/KlondikeBoard"]
+unique_name_in_owner = true
+visible = false
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = 142.0
+margin_right = 871.0
+margin_bottom = 397.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "This game was created by Preston H.
+
+With help from the Godot Engine, free assets from Kenny (<https://kenney.nl/>), and the NovaOval font (Copyright (c) 2011, wmk69 (wmk69@o2.pl)) under the OFL license (<http://scripts.sil.org/OFL>)."
+autowrap = true
+
+[node name="ButtonBar" type="HBoxContainer" parent="MarginContainer/KlondikeBoard"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -46.0
+margin_right = 428.0
+grow_vertical = 0
+
+[node name="BtnAbout" type="Button" parent="MarginContainer/KlondikeBoard/ButtonBar"]
+unique_name_in_owner = true
+margin_right = 140.0
+margin_bottom = 46.0
+rect_min_size = Vector2( 140, 40 )
+focus_mode = 0
+size_flags_vertical = 0
+toggle_mode = true
+text = "About"
+
+[node name="BtnCredits" type="Button" parent="MarginContainer/KlondikeBoard/ButtonBar"]
+unique_name_in_owner = true
+margin_left = 144.0
+margin_right = 284.0
+margin_bottom = 46.0
+rect_min_size = Vector2( 140, 40 )
+focus_mode = 0
+size_flags_vertical = 0
+toggle_mode = true
+text = "Credits"
+
+[node name="BtnReset" type="Button" parent="MarginContainer/KlondikeBoard/ButtonBar"]
+unique_name_in_owner = true
+margin_left = 288.0
+margin_right = 428.0
+margin_bottom = 46.0
+rect_min_size = Vector2( 140, 40 )
+focus_mode = 0
+size_flags_vertical = 0
+text = "Reset"

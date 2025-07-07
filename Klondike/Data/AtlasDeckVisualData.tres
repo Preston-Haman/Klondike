@@ -1,0 +1,456 @@
+[gd_resource type="Resource" load_steps=60 format=2]
+
+[ext_resource path="res://Assets/card_atlas.png" type="Texture" id=1]
+[ext_resource path="res://Data/DeckVisualData.gd" type="Script" id=2]
+[ext_resource path="res://Data/CardVisualData.gd" type="Script" id=3]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 88, 260, 42, 60 )
+suit = 3
+value = 1
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 256, 132, 42, 60 )
+suit = 3
+value = 8
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 130, 132, 42, 60 )
+suit = 3
+value = 5
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 88, 132, 42, 60 )
+suit = 3
+value = 4
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 382, 132, 42, 60 )
+suit = 3
+value = 11
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 466, 132, 42, 60 )
+suit = 3
+value = 13
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 298, 132, 42, 60 )
+suit = 3
+value = 9
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 424, 132, 42, 60 )
+suit = 3
+value = 12
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 214, 132, 42, 60 )
+suit = 3
+value = 7
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 172, 132, 42, 60 )
+suit = 3
+value = 6
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 340, 132, 42, 60 )
+suit = 3
+value = 10
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 46, 132, 42, 60 )
+suit = 3
+value = 3
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 4, 132, 42, 60 )
+suit = 3
+value = 2
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 46, 260, 42, 60 )
+suit = 2
+value = 1
+
+[sub_resource type="Resource" id=15]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 256, 68, 42, 60 )
+suit = 2
+value = 8
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 130, 68, 42, 60 )
+suit = 2
+value = 5
+
+[sub_resource type="Resource" id=17]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 88, 68, 42, 60 )
+suit = 2
+value = 4
+
+[sub_resource type="Resource" id=18]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 382, 68, 42, 60 )
+suit = 2
+value = 11
+
+[sub_resource type="Resource" id=19]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 466, 68, 42, 60 )
+suit = 2
+value = 13
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 298, 68, 42, 60 )
+suit = 2
+value = 9
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 424, 68, 42, 60 )
+suit = 2
+value = 12
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 214, 68, 42, 60 )
+suit = 2
+value = 7
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 172, 68, 42, 60 )
+suit = 2
+value = 6
+
+[sub_resource type="Resource" id=24]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 340, 68, 42, 60 )
+suit = 2
+value = 10
+
+[sub_resource type="Resource" id=25]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 46, 68, 42, 60 )
+suit = 2
+value = 3
+
+[sub_resource type="Resource" id=26]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 4, 68, 42, 60 )
+suit = 2
+value = 2
+
+[sub_resource type="Resource" id=27]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 4, 260, 42, 60 )
+suit = 0
+value = 1
+
+[sub_resource type="Resource" id=28]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 256, 4, 42, 60 )
+suit = 0
+value = 8
+
+[sub_resource type="Resource" id=29]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 130, 4, 42, 60 )
+suit = 0
+value = 5
+
+[sub_resource type="Resource" id=30]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 88, 4, 42, 60 )
+suit = 0
+value = 4
+
+[sub_resource type="Resource" id=31]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 382, 4, 42, 60 )
+suit = 0
+value = 11
+
+[sub_resource type="Resource" id=32]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 466, 4, 42, 60 )
+suit = 0
+value = 13
+
+[sub_resource type="Resource" id=33]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 298, 4, 42, 60 )
+suit = 0
+value = 9
+
+[sub_resource type="Resource" id=34]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 424, 4, 42, 60 )
+suit = 0
+value = 12
+
+[sub_resource type="Resource" id=35]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 214, 4, 42, 60 )
+suit = 0
+value = 7
+
+[sub_resource type="Resource" id=36]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 172, 4, 42, 60 )
+suit = 0
+value = 6
+
+[sub_resource type="Resource" id=37]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 340, 4, 42, 60 )
+suit = 0
+value = 10
+
+[sub_resource type="Resource" id=38]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 46, 4, 42, 60 )
+suit = 0
+value = 3
+
+[sub_resource type="Resource" id=39]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 4, 4, 42, 60 )
+suit = 0
+value = 2
+
+[sub_resource type="Resource" id=40]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 130, 260, 42, 60 )
+suit = 1
+value = 1
+
+[sub_resource type="Resource" id=41]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 256, 196, 42, 60 )
+suit = 1
+value = 8
+
+[sub_resource type="Resource" id=42]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 130, 196, 42, 60 )
+suit = 1
+value = 5
+
+[sub_resource type="Resource" id=43]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 88, 196, 42, 60 )
+suit = 1
+value = 4
+
+[sub_resource type="Resource" id=44]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 382, 196, 42, 60 )
+suit = 1
+value = 11
+
+[sub_resource type="Resource" id=45]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 466, 196, 42, 60 )
+suit = 1
+value = 13
+
+[sub_resource type="Resource" id=46]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 298, 196, 42, 60 )
+suit = 1
+value = 9
+
+[sub_resource type="Resource" id=47]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 424, 196, 42, 60 )
+suit = 1
+value = 12
+
+[sub_resource type="Resource" id=48]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 214, 196, 42, 60 )
+suit = 1
+value = 7
+
+[sub_resource type="Resource" id=49]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 172, 196, 42, 60 )
+suit = 1
+value = 6
+
+[sub_resource type="Resource" id=50]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 340, 196, 42, 60 )
+suit = 1
+value = 10
+
+[sub_resource type="Resource" id=51]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 46, 196, 42, 60 )
+suit = 1
+value = 3
+
+[sub_resource type="Resource" id=52]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 4, 196, 42, 60 )
+suit = 1
+value = 2
+
+[sub_resource type="Resource" id=53]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 214, 260, 42, 60 )
+suit = -1
+value = 15
+
+[sub_resource type="Resource" id=54]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 172, 260, 42, 60 )
+suit = -1
+value = 14
+
+[sub_resource type="Resource" id=55]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 256, 260, 42, 60 )
+suit = -1
+value = -1
+
+[sub_resource type="Resource" id=56]
+script = ExtResource( 3 )
+card_texture = ExtResource( 1 )
+card_texture_region = Rect2( 298, 260, 42, 60 )
+suit = -1
+value = 0
+
+[resource]
+script = ExtResource( 2 )
+card_style_back = SubResource( 55 )
+card_style_empty = SubResource( 56 )
+card_hearts_ace = SubResource( 27 )
+card_hearts_two = SubResource( 39 )
+card_hearts_three = SubResource( 38 )
+card_hearts_four = SubResource( 30 )
+card_hearts_five = SubResource( 29 )
+card_hearts_six = SubResource( 36 )
+card_hearts_seven = SubResource( 35 )
+card_hearts_eight = SubResource( 28 )
+card_hearts_nine = SubResource( 33 )
+card_hearts_ten = SubResource( 37 )
+card_hearts_jack = SubResource( 31 )
+card_hearts_queen = SubResource( 34 )
+card_hearts_king = SubResource( 32 )
+card_spades_ace = SubResource( 40 )
+card_spades_two = SubResource( 52 )
+card_spades_three = SubResource( 51 )
+card_spades_four = SubResource( 43 )
+card_spades_five = SubResource( 42 )
+card_spades_six = SubResource( 49 )
+card_spades_seven = SubResource( 48 )
+card_spades_eight = SubResource( 41 )
+card_spades_nine = SubResource( 46 )
+card_spades_ten = SubResource( 50 )
+card_spades_jack = SubResource( 44 )
+card_spades_queen = SubResource( 47 )
+card_spades_king = SubResource( 45 )
+card_diamonds_ace = SubResource( 14 )
+card_diamonds_two = SubResource( 26 )
+card_diamonds_three = SubResource( 25 )
+card_diamonds_four = SubResource( 17 )
+card_diamonds_five = SubResource( 16 )
+card_diamonds_six = SubResource( 23 )
+card_diamonds_seven = SubResource( 22 )
+card_diamonds_eight = SubResource( 15 )
+card_diamonds_nine = SubResource( 20 )
+card_diamonds_ten = SubResource( 24 )
+card_diamonds_jack = SubResource( 18 )
+card_diamonds_queen = SubResource( 21 )
+card_diamonds_king = SubResource( 19 )
+card_clubs_ace = SubResource( 1 )
+card_clubs_two = SubResource( 13 )
+card_clubs_three = SubResource( 12 )
+card_clubs_four = SubResource( 4 )
+card_clubs_five = SubResource( 3 )
+card_clubs_six = SubResource( 10 )
+card_clubs_seven = SubResource( 9 )
+card_clubs_eight = SubResource( 2 )
+card_clubs_nine = SubResource( 7 )
+card_clubs_ten = SubResource( 11 )
+card_clubs_jack = SubResource( 5 )
+card_clubs_queen = SubResource( 8 )
+card_clubs_king = SubResource( 6 )
+card_special_joker_red = SubResource( 54 )
+card_special_joker_black = SubResource( 53 )
